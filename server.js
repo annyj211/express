@@ -5,7 +5,7 @@ app.get("/acamica/dwfs/alumnos",(req,res)=>{
     res.json({
         Nombre:"Mi primer server"
     })
-}); //Definir la ruta yla funcion 
+}); //Definir la ruta y la funcion 
 
 app.get("/acamica/dwfs/alumnos/:id",(req,res)=>{//Enviar los parametros
     if(parseInt(req.params.id).toString()=="NaN"){ //comparar lo que recibo para comparar e identificar si es texto
